@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('#contactForm').on('submit', function(event) {
       event.preventDefault();
       $.ajax({
-        url: 'https://getform.io/f/your-getform-endpoint',
+        url: 'https://getform.io/f/zaxdeypa',
         method: 'POST',
         data: $(this).serialize(),
         success: function(response) {
@@ -20,13 +20,6 @@ $(document).ready(function() {
     $('.project-content').on('click', function() {
       var imgSrc = $(this).data('img');
       $('#project-image').attr('src', imgSrc);
-    });
-  
-    // Hover effect for carousel items
-    $('.carousel-item').hover(function() {
-      $(this).find('img').attr('src', 'img/hover-image.jpg');
-    }, function() {
-      $(this).find('img').attr('src', 'img/original-image.jpg');
     });
   
     // Read more button click

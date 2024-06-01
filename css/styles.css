@@ -70,3 +70,58 @@ body {
     padding: 30px;
   }
   
+  .highlight-on-hover {
+    transition: background-color 0.3s ease;
+  }
+  
+  .highlight-on-hover:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .what-we-do {
+    background: #FAFAFA;
+    padding: 50px 0;
+  }
+  
+  .what-we-do h2, .what-we-do h3, .what-we-do p {
+    margin-bottom: 30px;
+  }
+  
+  .service-card {
+    background-color: #dc3545;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .service-card h4 {
+    margin-bottom: 20px;
+  }
+  
+  .service-card p {
+    margin-bottom: 20px;
+  }
+  
+  .service-card img {
+    width: 20px;
+    margin-left: 10px;
+  }
+  
+  .carousel-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: transparent;
+  }
+  
+  .carousel-indicators li {
+    background-color: #dc3545;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #dc3545;
+  }
+  
