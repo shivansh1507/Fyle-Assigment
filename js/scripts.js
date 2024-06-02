@@ -1,34 +1,33 @@
 $(document).ready(function() {
-    // Form submission
+    'use strict';
+    
     $('#contactForm').on('submit', function(event) {
-      event.preventDefault();
-      $.ajax({
-        url: 'https://getform.io/f/zaxdeypa',
-        method: 'POST',
-        data: $(this).serialize(),
-        success: function(response) {
-          alert('Form submitted successfully');
-          $('#contactModal').modal('hide');
-        },
-        error: function(error) {
-          alert('Error submitting form');
-        }
-      });
+        event.preventDefault();
+        $.ajax({
+            url: 'https://getform.io/f/zaxdeypa',
+            method: 'POST',
+            data: $(this).serialize(),
+            success: function(response) {
+                alert('Form submitted successfully');
+                $('#contactModal').modal('hide');
+            },
+            error: function(error) {
+                alert('Error submitting form');
+            }
+        });
     });
-  
-    // Change project image on content click
+
     $('.project-content').on('click', function() {
-      var imgSrc = $(this).data('img');
-      $('#project-image').attr('src', imgSrc);
+        $('.project-content').removeClass('active');
+        $(this).addClass('active');
+        var imgSrc = $(this).data('img');
+        $('#project-image').attr('src', imgSrc);
     });
-  
-    // Read more button click
+
     $('.read-more-btn').on('click', function() {
-      window.open('https://fylehq.com', '_blank');
+        window.open('https://fylehq.com', '_blank');
     });
-  });
-  
-  $(document).ready(function () {
+
     var images = ['img/1-2.png', 'img/2-2.png', 'img/3-2.png'];
     var currentIndex = 0;
 
@@ -42,7 +41,7 @@ $(document).ready(function() {
         $('.custom-indicators .dot').eq(index).addClass('active').attr('src', 'img/1.svg');
     }
 
-    $('.custom-indicators .dot').click(function () {
+    $('.custom-indicators .dot').on('click', function() {
         currentIndex = $(this).data('slide-to');
         updateImage(currentIndex);
     });
@@ -51,5 +50,10 @@ $(document).ready(function() {
         $(this).css('transform', 'scale(1.2)');
     }, function() {
         $(this).css('transform', 'scale(1)');
+    });
+
+    $('.text-container').on('click', function() {
+        $('.text-container').removeClass('selected');
+        $(this).addClass('selected');
     });
 });

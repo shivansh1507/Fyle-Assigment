@@ -391,3 +391,34 @@ body {
 .what-we-do .carousel {
     margin-bottom: 50px;
 }
+
+.selected {
+    background-color: #FF3147;
+    color: white; /* Ensure the text color is readable against the background */
+}
+
+.selected h4,
+.selected p {
+    color: white; /* Ensure the text color is readable against the background */
+}
+
+/* Add this to your existing CSS */
+.project-content.active {
+    background-color: #FF3147;
+    color: #FFFFFF;
+}
+
+
+.project-content {
+    color: black; /* Default text color */
+}
+
+.project-content.active {
+    background-color: #FF3147;
+    color: white; /* Text color when active */
+}
+
+.project-content.active h4,
+.project-content.active p {
+    color: white; /* Ensure the text color is readable against the background */
+}
