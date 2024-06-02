@@ -85,7 +85,8 @@ body {
     padding: 50px 0;
 }
 
-.what-we-do h2, .what-we-do h3 {
+.what-we-do h2,
+.what-we-do h3 {
     margin-bottom: 20px;
     text-align: left;
 }
@@ -101,8 +102,6 @@ body {
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
-    width: 584px;
-    height: 83px;
 }
 
 .services-title {
@@ -117,45 +116,63 @@ body {
 .service-card {
     background-color: #dc3545;
     color: white;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
     height: 100%;
+    border-radius: 5px; /* Adding some border radius for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding subtle shadow for depth */
 }
 
 .service-card h4 {
+    font-size: 24px; /* Increasing the font size */
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reducing bottom margin */
 }
 
 .service-card p {
-    margin-bottom: 20px;
+    text-align: center;
+    font: normal normal normal 16px/30px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .service-card img {
-    width: 58px;
-    margin-bottom: 10px;
+    width: 37px;
+    margin-bottom: 1.75px; /* Adjusting bottom margin */
 }
 
 .read-more-btn {
     display: inline-flex;
     align-items: center;
     background: #F4F4F4;
-    border-radius: 2px;
-    padding: 5px 10px;
+    border-radius: 5px; /* Adding some border radius for button */
+    padding: 8px 20px; /* Adjusting padding */
     color: #FF3147;
     border: none;
     cursor: pointer;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px; /* Adjusting font size */
     line-height: 26px;
-    letter-spacing: 1.4px;
+    letter-spacing: 1px; /* Adjusting letter spacing */
     text-align: left;
     font-family: 'Poppins', sans-serif;
+    transition: background 0.3s ease; /* Adding a transition effect */
+    height: 50px;
 }
 
 .read-more-btn img {
     margin-left: 10px;
     vertical-align: middle;
+}
+
+.read-more-btn:hover {
+    background: #e1e1e1; /* Adding a hover effect */
+}
+
+.read-more-btn:focus {
+    outline: none; /* Removing focus outline */
+    box-shadow: 0 0 0 3px rgba(255, 49, 71, 0.5); /* Adding focus shadow */
 }
 
 .carousel-item img {
@@ -164,16 +181,7 @@ body {
 
 .carousel-item:hover img {
     transform: scale(1.05);
-    opacity: 0.5; /* Adjust as necessary */
-}
-
-.carousel-item:hover::before {
-    content: url('/mnt/data/1.png'); /* Replace with your desired image */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    opacity: 0.5;
 }
 
 .carousel-indicators li {
@@ -283,4 +291,103 @@ body {
 .partners img {
     width: auto;
     height: auto;
+}
+
+.award-winning-heading {
+    font: normal normal 600 30px/110px 'Cormorant SC';
+    color: #FF3147;
+    text-transform: uppercase;
+}
+
+.digital-marketing-agency-heading {
+    font: normal normal bold 60px/80px 'Cormorant SC';
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.hero-paragraph {
+    font: normal normal normal 16px/30px 'Poppins';
+    color: #000000;
+}
+
+.what-we-do-heading {
+    font: normal normal 600 24px/26px 'Cormorant SC';
+    color: #FF3147;
+}
+
+.services-provide-heading {
+    font: normal normal bold 45px/65px 'Cormorant SC';
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.updated-what-we-do-paragraph {
+    font: normal normal normal 16px/30px Poppins;
+    color: #000000;
+}
+
+.icon {
+    width: 72px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 14px;
+    color: #666666;
+}
+
+.custom-indicators {
+    position: absolute;
+    bottom: -50px; /* Adjust to ensure some space below the image */
+    right: 70%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Reduced gap for a professional look */
+}
+
+.custom-indicators .dot {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.custom-indicators .dot.active {
+    width: 15px;
+    height: 15px;
+    background: transparent;
+}
+
+.custom-indicators .dot:not(.active) {
+    width: 15px;
+    height: 15px;
+}
+
+.custom-indicators .dot:hover {
+    transform: scale(1.5); /* Slight hover effect for interactivity */
+}
+
+/* Maintain original image sizes */
+.carousel-item img,
+.service-card {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item .service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Additional styling for the carousel */
+.what-we-do .carousel {
+    margin-bottom: 50px;
 }
