@@ -58,7 +58,7 @@ Welcome to the Fyle-Assignment website project! This project showcases a beautif
 ## 🚀 Getting Started
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/digital-marketing-agency.git
+   git clone https://github.com/shivansh1507/Fyle-Assigment.git
 
 2. **Navigate to the project directory**:
 ```bash
