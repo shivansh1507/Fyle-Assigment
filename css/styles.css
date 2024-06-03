@@ -31,6 +31,30 @@ body {
     margin-bottom: 30px;
 }
 
+.company-growth .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-growth .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.company-growth .card img {
+    width: 39px;
+    margin-bottom: 15px;
+}
+
+.company-growth .card h4 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.company-growth .card p {
+    font-size: 18px;
+    color: #666;
+}
+
 .card {
     transition: transform 0.3s ease;
 }
@@ -131,7 +155,7 @@ body {
 
 .service-card p {
     text-align: center;
-    font: normal normal normal 16px/30px Poppins;
+    font: normal normal normal 16px/32px Poppins;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -421,4 +445,206 @@ body {
 .project-content.active h4,
 .project-content.active p {
     color: white; /* Ensure the text color is readable against the background */
+}
+
+.client-feedback {
+    padding: 50px 0;
+    background: #FAFAFA;
+}
+
+.client-feedback h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FF3147;
+}
+
+.client-feedback h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.feedback {
+    position: relative;
+    margin-top: 30px;
+}
+
+.feedback .quote-mark {
+    width: 40px; /* Adjust the size as needed */
+    margin-right: 10px;
+}
+
+.feedback-text-container {
+    max-width: 700px;
+}
+
+.client-feedback-text {
+    font-size: 18px;
+    color: #666666;
+    margin: 0;
+    text-align: left;
+}
+
+.client-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    color: #FF3147 !important;
+}
+
+.modal-content {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close {
+    font-size: 24px;
+}
+
+/* General form styles */
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    padding: 10px 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #ff3147;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    background-color: #ff3147;
+    border: 1px solid #ff3147;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-check-input:checked {
+    background-color: #ff3147;
+    border-color: #ff3147;
+     font-size: 14px;
+    font-weight: bold;
+}
+
+.form-check-label {
+    font-size: 14px;
+    color: #666;
+    margin-left: 5px;
+}
+
+.btn-primary {
+    background-color: #FF3366;
+    border-color: #ff3147;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #FF3366;
+    border-color: #e02e3d;
+}
+
+.modal-content {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.close {
+    font-size: 24px;
+    color: #333;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-row .form-group {
+    width: 48%;
+}
+
+
+.partners {
+    padding: 50px 0;
+    background: #FF3147; /* Red background color */
+}
+
+.partners .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.partners img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    filter: brightness(0) invert(1); /* White logos on red background */
+}
+
+/* Custom button styles to prevent color change on click */
+.contact-us-btn,
+.contact-us-btn:focus,
+.contact-us-btn:active {
+    background-color: #FF3147;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    box-shadow: none; /* Remove default Bootstrap button shadow */
+}
+
+.contact-us-btn:focus,
+.contact-us-btn:active {
+    background-color: #FF3147 !important;
+    color: #FFFFFF !important;
 }

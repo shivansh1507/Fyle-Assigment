@@ -1,6 +1,7 @@
 $(document).ready(function() {
     'use strict';
-    
+
+    // Handle form submission
     $('#contactForm').on('submit', function(event) {
         event.preventDefault();
         $.ajax({
@@ -17,6 +18,7 @@ $(document).ready(function() {
         });
     });
 
+    // Handle project content click
     $('.project-content').on('click', function() {
         $('.project-content').removeClass('active');
         $(this).addClass('active');
@@ -24,10 +26,12 @@ $(document).ready(function() {
         $('#project-image').attr('src', imgSrc);
     });
 
+    // Handle read more button click
     $('.read-more-btn').on('click', function() {
         window.open('https://fylehq.com', '_blank');
     });
 
+    // Carousel image handling
     var images = ['img/1-2.png', 'img/2-2.png', 'img/3-2.png'];
     var currentIndex = 0;
 
@@ -52,6 +56,7 @@ $(document).ready(function() {
         $(this).css('transform', 'scale(1)');
     });
 
+    // Handle text container click
     $('.text-container').on('click', function() {
         $('.text-container').removeClass('selected');
         $(this).addClass('selected');
